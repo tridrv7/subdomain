@@ -1,0 +1,24 @@
+/* CSS Document */
+
+.modal-transparent-top {
+    margin-top: 0;
+    border: 1px solid yellow;
+    color: #FFF !important;
+}
+.modal-transparent-top .modal-content {
+    border-radius: 0px;
+    border: 0; 
+}
+
+.modal-transparent-top .modal-content {
+  -webkit-box-shadow: 0 1px 15px 1px rgba(9, 97, 165, 0.3);
+          box-shadow: 0 1px 15px 1px rgba(9, 97, 165, 0.3); 
+}
+
+.modal-transparent-top .modal-content {
+  background: rgba(11, 39, 61, 0.85); 
+}
+
+.panel-hdr h2 {
+    text-transform: capitalize;
+}

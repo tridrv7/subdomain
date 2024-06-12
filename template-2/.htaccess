@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^([0-9]+)/?$ grid.php?kategori=$1 [L,QSA]
+RewriteRule ^([0-9]+)/([0-9]+)/?$ detail.php?id=$1&post_id=$2 [L]
+RewriteRule ^([0-9]+)/halaman-([0-9]+)/?$ grid.php?kategori=$1&page=$2 [L,QSA]
+RewriteRule ^galeri/halaman-([0-9]+)/?$ galeri/index.php?page=$1 [L,QSA]
+RewriteRule ^media/halaman-([0-9]+)/?$ media/index.php?page=$1 [L,QSA]

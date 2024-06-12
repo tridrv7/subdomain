@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteRule ^(api)/([0-9]+)?$ grid-api.php?kategori=$1&api=$2 [L,QSA]
+RewriteRule ^(video)/?$ media/index.php?kategori=$1 [L,QSA]
+RewriteRule ^(struktur)/?$ strOrg/index.php?kategori=$1 [L,QSA]
+RewriteRule ^(galeri)/?$ galeri/index.php?kategori=$1 [L,QSA]
+RewriteRule ^([0-9]+)/?$ grid.php?kategori=$1 [L,QSA]
+RewriteRule ^([0-9]+)/([0-9]+)/?$ detail.php?kategori=$1&post=$2 [L]
+RewriteRule ^([0-9]+)/halaman-([0-9]+)/?$ grid.php?kategori=$1&page=$2 [L,QSA]
+
+ErrorDocument 404 /error.php
